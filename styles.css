@@ -1,5 +1,6 @@
 body{
     margin: 0;
-    background: green;
+    background-image: url("ATX.jpg");
+    background-color: #cccccc;
     text-align: center;
 }
