@@ -1,6 +1,15 @@
 body{
     margin: 0;
-    background-image: url("ATX.jpg");
+    background-image: url("images/ATX.jpg");
+    background-size: cover;
     background-color: #cccccc;
     text-align: center;
+    tex
+}   
+div {
+    background-color: white;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
 }
