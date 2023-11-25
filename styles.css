@@ -1,15 +1,51 @@
 body{
     margin: 0;
     background-image: url("images/ATX.jpg");
-    background-size: cover;
+    background-size:cover;
     background-color: #cccccc;
     text-align: center;
-    tex
+    
 }   
 div {
     background-color: white;
-    width: 300px;
+    width: 600px;
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
+
 }
+div2 {
+    background-color: gold;
+    width: 200px;
+    border: 15px solid green;
+    padding: 10px;
+    margin: 10px;
+}
+.top-right-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5px; /* Adjust margin as needed to provide some space from the edges */
+}
+.top-right-image img {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+}
+h2{ 
+    font-size: 5em; 
+    font-family: serif; 
+    color:#800000; 
+    text-align: center; 
+    animation: animate 1.5s linear infinite; 
+  }  
+@keyframes animate{ 
+    0%{ 
+      opacity: 0; 
+    } 
+    50%{ 
+      opacity: 0.7; 
+    } 
+    100%{ 
+      opacity: 0; 
+    } 
+  } 
