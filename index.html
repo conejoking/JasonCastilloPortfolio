@@ -25,6 +25,34 @@
             <p>However, due to a reallocation of resources at NXP resulting from fab repurposing, there was a layoff, and unfortunately, my name was drawn. Despite this setback, I remain dedicated to improving as an engineer and eagerly anticipate applying my newfound knowledge once I return to the workforce.</p>
                
     </div>
+    <button class="openPdfButton" onclick="openPdf()">Open Resume</button>
+    <button class="closePdfButton" onclick="closePdf()">Close Resume</button>
+
+    <iframe id="pdfViewer" src="documents/Jason_Castillo_Resume_Semi.pdf"></iframe>
+
+    <script>
+        function openPdf() {
+            var pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.style.display = 'block';
+
+            // Show the "Close PDF" button
+            document.querySelector('.closePdfButton').style.display = 'inline-block';
+            
+            // Hide the "Open PDF" button
+            document.querySelector('.openPdfButton').style.display = 'none';
+        }
+
+        function closePdf() {
+            var pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.style.display = 'none';
+
+            // Show the "Open PDF" button
+            document.querySelector('.openPdfButton').style.display = 'inline-block';
+
+            // Hide the "Close PDF" button
+            document.querySelector('.closePdfButton').style.display = 'none';
+        }
+    </script>
 
 
 
