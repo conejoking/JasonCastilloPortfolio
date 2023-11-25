@@ -32,11 +32,12 @@ div2 {
     height: auto; /* Maintain the aspect ratio */
 }
 h1{ 
+    background-color: green;
     font-size: 4em; 
     font-family:Arial, Helvetica, sans-serif; 
-    color:#490080; 
+    color:white; 
     text-align: center; 
-    text-decoration: underline;
+
 
   } 
 h2{ 
@@ -70,7 +71,9 @@ h2{
 
 .openPdfButton,
 .closePdfButton {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
