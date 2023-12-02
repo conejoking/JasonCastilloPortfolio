@@ -2,8 +2,11 @@ body{
     margin: 0;
     background-image: url("images/ATX.jpg");
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #cccccc;
     text-align: center;
+    width: 100%;
     
 }   
 div {
