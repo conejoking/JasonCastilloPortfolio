@@ -43,9 +43,9 @@ h1{
 h2{ 
     font-size: 5em; 
     font-family: serif; 
-    color:#800000; 
+    color:rgba(0, 128, 81, 0.504)128, 23); 
     text-align: center; 
-    animation: animate 1.5s linear infinite; 
+    /*animation: animate 1.5s linear infinite;*/
   }  
 @keyframes animate{ 
     0%{ 
