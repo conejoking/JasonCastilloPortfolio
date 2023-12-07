@@ -203,6 +203,20 @@ nav a:hover {
   color: black;
 }
 
+.button-style {
+  background-color: green;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-style:hover,
+.button-style:active {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
 footer {
   position:absolute;
   bottom: 0;
@@ -214,6 +228,8 @@ footer {
   background-color: rgb(4, 51, 4);
   color: white;
 }
+
+
 
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
