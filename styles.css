@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url("images/ATX.jpg");
+    background-image: url("images/FountainUT.jpg");
     background-size:cover;
     background-attachment: fixed; 
     background-position: center;
@@ -10,10 +10,20 @@ body{
     width: 100%;
     
 }   
+#myVideo {
+
+ height: min-content;
+ margin-left: auto;
+ margin-right: auto;
+  
+
+}
+
+
 div {
     background-color: white;
     width: fit-content;
-    border: 5px solid green;
+    border: 5px solid rgb(4, 51, 4);
     padding: 10px;
     margin: 20px;
     text-align: left;
@@ -40,7 +50,7 @@ div2 {
     
 }
 .center {
-  display: block;
+  display: flexbox;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
@@ -73,15 +83,15 @@ div2 {
 }
 h1{ 
     
-    background-color: rgb(201, 208, 226);
-    border: 5px solid green;
+
+    
     margin-left: auto;
     margin-right: auto;
     width:fit-content;
     position: rela;
     font-size: 4em; 
     font-family: serif; 
-    color:black; 
+    color:rgb(191,87,0); 
     text-align: center; 
 
 
@@ -162,7 +172,7 @@ h2{
 /* Add these styles to your existing CSS file */
 
 nav {
-  background-color: green;
+  background-color: rgb(4, 51, 4);
   overflow: hidden;
 }
 
@@ -179,7 +189,7 @@ nav li {
 
 .topnav-right {
   list-style-type: none;
-  background-color: green;
+  background-color: rgb(4, 51, 4);
   color: goldenrod;
   margin: 0;
   padding: 0;
@@ -218,7 +228,7 @@ nav a:hover {
 }
 
 footer {
-  position:absolute;
+  position:fixed;
   bottom: 0;
   width: 100%;
   height: 50px;
