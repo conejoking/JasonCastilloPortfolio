@@ -20,86 +20,87 @@
 
 
 
-        <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
-            <h5 class="w3-bar-item">Projects</h5>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Software Engineering')">Software Engineering</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Electrical Engineering')">Electrical Engineering</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'MFG Engineering')">MFG Engineering</button>
-          </div>
-          
-          <div style="margin-left:130px">
-          
-            <div id="Software Engineering" class="w3-container city" style="display:none">
-              <h2>Software Engineering</h2>
-              <p><strong>GPU Image Blur Using CUDA</strong><br>
-                <em>UT Austin (Parallel Algorithms) &emsp; 2023</em><br>
-                Created an implementation of Gaussian Blur and then integrated CUDA. The runtime was compared from the CPU and GPU implementation over different-sized BMP images.
-            </p>
-            
-            <p>
-                <a href="https://github.com/conejoking/seqBlur" class="button-style" target="_blank">GitHub Link</a>
-                <a href="documents/Parallel_GPU_based_Algorithms_for_Image_Processing.pdf" class="button-style">CUDA Paper</a>
-            </p>
-            
-            <p><strong>Bitcoin Punch Clock</strong><br>
-                <em>UT Austin (Bitcoin) &emsp; 2022</em><br>
-                Developed a solution for instant payment after a shift by having an employee punch in and out and depending on how long their shift was, the amount they were paid. The system was implemented with an Arduino, Bitcoin test net, and a server.
-            </p>
-            <p><strong>JUnit Test Suite</strong><br>
-                <em>UT Austin (Software Testing) &emsp; 2023</em><br>
-                Implemented a comprehensive JUnit test suite within a simulated distributed network capable of dispatching messages to individual nodes. Each node operated within its dedicated thread, mirroring the intricacies of a distributed system. The primary objective was to attain extensive path coverage, a goal successfully met by orchestrating message transmissions in diverse directions throughout the test suite.    
-            </p>
-            <p><strong>Optimal Chemotherapy Drug Combination</strong><br>
-                <em>UT Austin (Algorithms) &emsp; 2023</em><br>
-                Developed an algorithm aimed at identifying the most effective combination of drug dosages to maximize patient benefits during chemotherapy. Subsequently, translated this algorithm into Java and executed it against a specified set of test cases. The input parameters included the number of drugs and their efficacy over time, with the drug impacts modeled by a logarithmic function, reflecting their diminishing effect as time progresses.
-            </p>
-            <p><strong>Pintos</strong><br>
-                <em>UT Austin (Systems Programming) &emsp; 2022</em><br>
-                I successfully completed a project utilizing Pintos, an educational operating system framework developed at Stanford University. The project focused on implementing key operating systems concepts, including process scheduling, virtual memory, file systems, and system calls, within the Pintos environment. This hands-on experience allowed me to deepen my understanding of operating systems principles and enhance my practical skills in designing and implementing core OS functionalities.
-            </p>
-
-            </div>
-          
-            <div id="Electrical Engineering" class="w3-container city" style="display:none">
-              <h2>Electrical Engineering</h2>
-              <p><strong>HDL Microcontroller</strong><br>
-                <em>Texas State University (HDL) &emsp; 2016</em><br>
-                Designed a microcontroller on Xilinx using Verilog HDL. We were the only team that was able to implement a pipeline successfully even though this feature requirement was removed due to difficulty.
-            </p>
-            <p><strong>Analog and Mixed Signals</strong><br>
-                <em>Texas State University &emsp; 2017</em><br>
-                Designed analog and mixed-signal circuits, like PLL and other filters. Utilized NI Multisim to run simulations and then implement with real hardware components on a breadboard and testing with Oscilloscope with FFT, DMM, and signal generators.
-            </p>  
-            <p><strong>pH Meter for Industrial Use</strong><br>
-                <em>Texas State University (Senior Design) &emsp; 2017</em><br>
-                Solution to a pH problem for a concrete facility drainage for a senior design project. Developed an outdoor pH meter that could take pH samples every given time and output its value to a workstation. I programmed a Raspberry Pi that could read the signal and had a calibration function based on a linear equation.
-            </p>
-            <p><strong>MEMS Spectrometer</strong><br>
-                <em>Texas State University (MEMS) &emsp; 2017</em><br>
-                Conceived the concept of a MEMS spectrometer, innovatively employing a pressure chamber in lieu of the conventional voltage cantilever. Drawing inspiration from the MEMS technology found in printer ink mechanics, the design involved oscillating the resist coil to heat up a chamber, causing displacement of the mirror. This innovative approach resulted in the generation of multiple wavelengths from a monochromatic laser, enhancing the spectrometer's capabilities.
-            </p>
-            </div>
-          
-            <div id="MFG Engineering" class="w3-container city" style="display:none">
-              <h2>MFG Engineering</h2>
-              <p><strong>Defect Classification ML</strong><br>
-                <em>NXP &emsp; 2022</em><br>
-                With manual classification of defects came an abundance of man hours and delayed test results for crucial fab issues. The solution was to develop an ML model to automatically classify defects from defect images. Utilizing a large data set of already classified defect images, we were able to train a model to provide a proof of concept that could help reduce cost and defectivity to the company.
-            </p>
-              <p><strong>Dry Etch RF Match Qualification</strong><br>
-                <em>NXP &emsp; 2017</em><br>
-                Due to large RF match failures and no more support, there was a need for a more robust option. I qualified an RF match with vacuum capacitors for a dry etch tool by installing the hardware and running process qualification that yielded a 20% increase in efficiency.
-            </p>
-            <p><strong>Pro Z Recipe Creations</strong><br>
-                <em>NXP &emsp; 2023</em><br>
-                Upon the integration of the cutting-edge TEL Pro Z photo track tool, a transition from Act 8 i-line processes presented formidable challenges. The inherent limitations of the TEL Pro Z tool, which lacked the customization flexibility of its predecessor, Act 8, posed constraints on the direct transfer of process recipes. Compounding matters, past production demands had pushed recipes beyond their recommended processing spin speeds.
-                <p>
-                Through collaborative efforts involving the vendor, technicians, and sustainers, a successful resolution emerged. We navigated these challenges by devising and implementing an innovative process technique tailored to the TEL Pro Z tool. This meticulous approach not only addressed the constraints but also facilitated the seamless integration of all process recipes within the committed timeframe.
-                </p>        
-            </p>
-            </div>
-          
-          </div>
+ <!-- Tab links -->
+ <div class="tab" >
+    <h2 class="w3-bar-item">Projects</h2>
+    <button class="tablinks" onclick="openCity(event, 'Software Engineering')">Software Engineering</button>
+    <button class="tablinks" onclick="openCity(event, 'Electrical Engineering')">Electrical Engineering</button>
+    <button class="tablinks" onclick="openCity(event, 'MFG Engineering')">MFG Engineering</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Software Engineering" class="tabcontent">
+    <h2>Software Engineering</h2>
+    <p><strong>GPU Image Blur Using CUDA</strong><br>
+        <em>UT Austin (Parallel Algorithms) &emsp; 2023</em><br>
+        Created an implementation of Gaussian Blur and then integrated CUDA. The runtime was compared from the CPU and GPU implementation over different-sized BMP images.
+    </p>
+    
+    <p>
+        <a href="https://github.com/conejoking/seqBlur" class="button-style" target="_blank">GitHub Link</a>
+        <a href="documents/Parallel_GPU_based_Algorithms_for_Image_Processing.pdf" class="button-style">CUDA Paper</a>
+    <hr>
+</p>
+    
+    <p><strong>Bitcoin Punch Clock</strong><br>
+        <em>UT Austin (Bitcoin) &emsp; 2022</em><br>
+        Developed a solution for instant payment after a shift by having an employee punch in and out and depending on how long their shift was, the amount they were paid. The system was implemented with an Arduino, Bitcoin test net, and a server.
+        <hr></p>
+    <p><strong>JUnit Test Suite</strong><br>
+        <em>UT Austin (Software Testing) &emsp; 2023</em><br>
+        Implemented a comprehensive JUnit test suite within a simulated distributed network capable of dispatching messages to individual nodes. Each node operated within its dedicated thread, mirroring the intricacies of a distributed system. The primary objective was to attain extensive path coverage, a goal successfully met by orchestrating message transmissions in diverse directions throughout the test suite.    
+        <hr></p>
+    <p><strong>Optimal Chemotherapy Drug Combination</strong><br>
+        <em>UT Austin (Algorithms) &emsp; 2023</em><br>
+        Developed an algorithm aimed at identifying the most effective combination of drug dosages to maximize patient benefits during chemotherapy. Subsequently, translated this algorithm into Java and executed it against a specified set of test cases. The input parameters included the number of drugs and their efficacy over time, with the drug impacts modeled by a logarithmic function, reflecting their diminishing effect as time progresses.
+        <hr></p>
+    <p><strong>Pintos</strong><br>
+        <em>UT Austin (Systems Programming) &emsp; 2022</em><br>
+        I successfully completed a project utilizing Pintos, an educational operating system framework developed at Stanford University. The project focused on implementing key operating systems concepts, including process scheduling, virtual memory, file systems, and system calls, within the Pintos environment. This hands-on experience allowed me to deepen my understanding of operating systems principles and enhance my practical skills in designing and implementing core OS functionalities.
+        <hr></p>
+    <span onclick="this.parentElement.style.display='none'">x</span>
+  </div>
+  
+  <div id="Electrical Engineering" class="tabcontent">
+    <h2>Electrical Engineering</h2>
+    <p><strong>HDL Microcontroller</strong><br>
+        <em>Texas State University (HDL) &emsp; 2016</em><br>
+        Designed a microcontroller on Xilinx using Verilog HDL. We were the only team that was able to implement a pipeline successfully even though this feature requirement was removed due to difficulty.
+        <hr></p>
+    <p><strong>Analog and Mixed Signals</strong><br>
+        <em>Texas State University &emsp; 2017</em><br>
+        Designed analog and mixed-signal circuits, like PLL and other filters. Utilized NI Multisim to run simulations and then implement with real hardware components on a breadboard and testing with Oscilloscope with FFT, DMM, and signal generators.
+        <hr></p>  
+    <p><strong>pH Meter for Industrial Use</strong><br>
+        <em>Texas State University (Senior Design) &emsp; 2017</em><br>
+        Solution to a pH problem for a concrete facility drainage for a senior design project. Developed an outdoor pH meter that could take pH samples every given time and output its value to a workstation. I programmed a Raspberry Pi that could read the signal and had a calibration function based on a linear equation.
+        <hr></p>
+    <p><strong>MEMS Spectrometer</strong><br>
+        <em>Texas State University (MEMS) &emsp; 2017</em><br>
+        Conceived the concept of a MEMS spectrometer, innovatively employing a pressure chamber in lieu of the conventional voltage cantilever. Drawing inspiration from the MEMS technology found in printer ink mechanics, the design involved oscillating the resist coil to heat up a chamber, causing displacement of the mirror. This innovative approach resulted in the generation of multiple wavelengths from a monochromatic laser, enhancing the spectrometer's capabilities.
+        <hr></p>
+    <span onclick="this.parentElement.style.display='none'">x</span>
+  </div>
+  
+  <div id="MFG Engineering" class="tabcontent">
+    <h2>MFG Engineering</h2>
+    <p><strong>Defect Classification ML</strong><br>
+        <em>NXP &emsp; 2022</em><br>
+        With manual classification of defects came an abundance of man hours and delayed test results for crucial fab issues. The solution was to develop an ML model to automatically classify defects from defect images. Utilizing a large data set of already classified defect images, we were able to train a model to provide a proof of concept that could help reduce cost and defectivity to the company.
+        <hr></p>
+      <p><strong>Dry Etch RF Match Qualification</strong><br>
+        <em>NXP &emsp; 2017</em><br>
+        Due to large RF match failures and no more support, there was a need for a more robust option. I qualified an RF match with vacuum capacitors for a dry etch tool by installing the hardware and running process qualification that yielded a 20% increase in efficiency.
+        <hr></p>
+    <p><strong>Pro Z Recipe Creations</strong><br>
+        <em>NXP &emsp; 2023</em><br>
+        Upon the integration of the cutting-edge TEL Pro Z photo track tool, a transition from Act 8 i-line processes presented formidable challenges. The inherent limitations of the TEL Pro Z tool, which lacked the customization flexibility of its predecessor, Act 8, posed constraints on the direct transfer of process recipes. Compounding matters, past production demands had pushed recipes beyond their recommended processing spin speeds.
+        <p>
+        Through collaborative efforts involving the vendor, technicians, and sustainers, a successful resolution emerged. We navigated these challenges by devising and implementing an innovative process technique tailored to the TEL Pro Z tool. This meticulous approach not only addressed the constraints but also facilitated the seamless integration of all process recipes within the committed timeframe.
+        </p>        
+        <hr></p>
+    <span onclick="this.parentElement.style.display='none'">x</span>
+  </div> 
           
 
           <script src="script.js"></script> 
